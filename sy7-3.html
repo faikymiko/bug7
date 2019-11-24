@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>案例4-20</title>
+<style type="text/css">
+	body,form{
+		padding: 0;
+		margin: 0;
+	}
+	
+	body{
+		background: url(images/sy7-3-1.jpeg) no-repeat center top;
+		padding: 50px 0 0 860px;
+	}
+	
+	form{
+		width:248px;
+		height:220px;
+		background-color:#F5EAE8;
+		padding:30px 40px;
+		border:1px solid #F5EAE8;
+	}
+	
+	input{
+		display: block;
+	}
+	[type="text"],[type="password"]{
+		width:250px;    /*设置宽度*/ 
+		height:38px;     /*设置高度*/
+		border:1px solid #CCC; /*设置边框*/
+		margin-bottom:30px;  /*设置下外边距，使其与下面的元素有30px的间隔*/
+		font-size:16px;     /*设置字体大小*/
+		text-indent:50px;   /*设置首行缩进，使元素内容不覆盖背景图片*/
+
+	}
+	[type="text"]{
+		background: url(images/zhanghao.jpg) no-repeat 0 -2px;
+	}
+	[type="password"]{
+		background: url(images/mima.jpg) no-repeat 0 -2px;
+	}
+	
+	[type="checkbox"]{
+		display: inline;
+		vertical-align: middle;
+	}
+	label{
+		font-size: 12px;
+	}
+	
+	.reg{
+		margin-left: 20px;
+		margin-top: -22px;
+		text-align: center;
+	}
+	
+	.reg a{
+		color:#999;
+		font-size:12px;
+		text-decoration: none;
+		
+	
+	}
+	
+	[type="submit"]{
+		width:255px;  /*设置宽度*/
+		height:44px;   /*设置高度*/
+		margin:25px auto;  /*设置外边距，左右外边距自动，则在父元素中居中*/
+		background-image:url(images/but.jpg);   /*设置背景图片*/
+		background-repeat: no-repeat;
+		border:none;
+	}
+	
+	.related{
+		width:330px;  /*设置宽度*/
+		height:145px;  /*设置高度*/
+		background-color:#F5EAE8;   /*设置背景色*/
+		border-top:1px solid #ddd;
+		padding-top:20px;
+		text-align: center;
+		font-size: 14px;
+		
+	}
+</style>
+</head>
+
+<body>
+<form action="" method="post" name="login">
+	<input type="text" name="user" placeholder="用户名/邮箱地址/手机号">
+	<input type="password" name="password" placeholder="填写密码">
+	<input type="checkbox" name="account" value="1" id="account">
+	<label for="account">记住密码</label>
+	
+	<div class="reg">
+		<a href="#">欢迎注册</a>
+		<a href="#">忘记密码</a>
+	</div>
+	<input type="submit" name="submit" value="">
+</form>
+
+<div class="related">
+	合作网站账号登录：
+	<img src="images/weixin2.png" alt="">
+	<img src="images/qqlogin.png" alt="">
+	<img src="images/taobao.png" alt="">
+</div>
+</body>
+</html>
